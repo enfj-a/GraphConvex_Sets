@@ -7,6 +7,7 @@ class ConvexFunction():
 
         if self.D is not None and not self.D.contains(x):
             return np.inf
+            ##find a better way to fix in cpp code
         else:
             return self._evaluate(x)
 
